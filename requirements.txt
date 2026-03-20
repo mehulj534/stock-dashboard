@@ -1,7 +1,0 @@
-streamlit
-yfinance
-scipy
-matplotlib
-pandas
-numpy
-pillow==9.5.0
