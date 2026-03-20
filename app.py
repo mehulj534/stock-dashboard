@@ -4,8 +4,26 @@ Streamlit app — trading analyst / trading operations
 Run: streamlit run app.py
 """
 
+import streamlit as st   
 import warnings
 warnings.filterwarnings("ignore")
+
+st.set_page_config(
+    page_title="Portfolio Analytics",
+    layout="wide",
+    initial_sidebar_state="collapsed",
+)
+
+st.markdown("""
+    <style>
+        .block-container {
+            padding-top: 4rem;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
+st.title("Portfolio Analytics Dashboard")
+st.markdown("<br>", unsafe_allow_html=True)
 
 import numpy as np
 import pandas as pd
@@ -681,3 +699,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
